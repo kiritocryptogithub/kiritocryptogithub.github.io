@@ -31,7 +31,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&amp;display=swap" rel="stylesheet">	
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&amp;display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">	
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>
 		 $(document).ready(function(){
@@ -48,7 +55,7 @@
 body{
 background:#000000;
 color:#FFFFFF;
-font-family: 'Archivo', sans-serif;
+font-family: 'Noto Sans', sans-serif;
 font-size:16px;
 font-weight: normal;
 font-style: normal;
@@ -108,12 +115,15 @@ font-size:10em;;
 letter-spacing:0px;
     position:relative;
 color:#000000;
-    font-family: 'PT Sans Narrow', sans-serif;
-        background-image: -webkit-gradient(linear, left top, right top, from(#2d9ee0), to(#8bdcf7));
+    font-family: 'Teko', sans-serif;
+        
+    background-image: -webkit-gradient(linear, left top, right top, from(#2d9ee0), to(#8bdcf7));
     background-image: linear-gradient(
 90deg
 , #2d9ee0 0%, #8bdcf7 100%);
-    -webkit-background-clip: text;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
     
@@ -123,13 +133,13 @@ text-align: center !important;
 }
 
 .hero-container .buy-button{
-color: #FFFFFF;
-background-color: #000000;
-border-color: #000000;
+color: #2d9ee0;
+background-color: transparent;
+border-color: #2d9ee0;
 position: relative;
 z-index: 1;
 overflow: hidden;
-border-radius:1em;
+border-radius:0px;
 padding:16px 20px;
 font-weight:600;
 letter-spacing:0px;
@@ -137,18 +147,19 @@ font-size:1em;
 }
 
 .hero-container .buy-button:hover, .hero-container .buy-button:focus{
-/*background-color: rgba(113, 223, 230, 0.75) !important;*/
+background-color: #2d9ee0;
+    color:#FFFFFF;
 }
 
 .hero-container .telegram-button{
-color: #000000;
+color: #2d9ee0;
 background-color: transparent;
-border-color: #000000;
+border-color: #2d9ee0;
 position: relative;
 z-index: 1;
 overflow: hidden;
-border: solid 1px #000000;
-border-radius:1em;
+border: solid 1px #2d9ee0;
+border-radius:0px;
 padding:16px 20px;
 font-weight:600;
 letter-spacing:0px;
@@ -156,7 +167,8 @@ font-size:1em;
 }
 
 .hero-container .telegram-button:hover, .hero-container .telegram-button:focus{
-/* background-color: #71DFE6 !important; */
+background-color: #2d9ee0;
+    color:#FFFFFF;
 }
 
     
@@ -166,6 +178,7 @@ font-size:1em;
 /* SECTION CLASS */
 
 .section{
+    background:transparent !important;
 }
 
 .section-container{
@@ -173,10 +186,17 @@ color:#ffffff;
 }
 
 .section-title{
-font-size:4em;
+font-size:5em;
 font-weight:700;
-font-family:'Archivo Narrow';
+font-family:'Teko';
 /*text-shadow: 10px #2C174F;*/
+    background-image: -webkit-gradient(linear, left top, right top, from(#2d9ee0), to(#8bdcf7));
+    background-image: linear-gradient(
+90deg
+, #2d9ee0 0%, #8bdcf7 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ---------------- */
@@ -184,7 +204,7 @@ font-family:'Archivo Narrow';
 /* ABOUT SECTION */
 
 .about-section{
-background:#000000;
+background:#1B1B1B;
 }
 
 .about-container{
@@ -219,14 +239,14 @@ padding-top:0 !important;
 }
 
 .features-container .tax-card{
- border:1px solid #FFFFFF;
+ border:1px solid #2d9ee0;
 border-radius:1em;
 max-width:480px;
-background:#FFFFFF;
+background:transparent;
 }
 
 .features-container .tax-title{
-color: transparent;
+color: #2d9ee0;
 font-weight: 600;
 line-height: 0.85;
 -webkit-text-stroke-width: 1px;
@@ -236,7 +256,7 @@ font-weight:700;
 }
     
 .features-container .tax-title-2{
-color: #000000;
+color: #2d9ee0;
 font-size: 1.5em;
 font-weight: 700;
 letter-spacing: 0;
@@ -246,7 +266,7 @@ line-height: 1;
 .features-container .tax-description{
 font-size:1em;
 font-weight:400;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 /* ---------------- */
@@ -268,24 +288,24 @@ color:#000000;
 }
 
 .tokenomics-container .tax-card{
- border:1px solid #000000;
+ border:1px solid #2d9ee0;
 border-radius:1em;
 max-width:480px;
-background:#000000;
+background:transparent;
 }
 
 .tokenomics-container .tax-title{
-color: #FFFFFF;
+color: transparent;
 font-weight: 600;
 line-height: 0.85;
--webkit-text-stroke-width: 0px;
--webkit-text-stroke-color: #000000;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #2d9ee0;
 font-size:5em;
 font-weight:700;
 }
     
 .tokenomics-container .tax-title-2{
-color: #FFFFFF;
+color: #2d9ee0;
 font-size: 1.5em;
 font-weight: 700;
 letter-spacing: 0;
@@ -302,12 +322,12 @@ font-weight:400;
 .tokenomics-container .tokenomics-info-table td{
 	padding:1em 1em;
 	border:0px solid #ECF4FF;
-	color: #000000 !important;
+	color: #FFFFFF !important;
 background:transparent !important;
 }
 
 .tokenomics-container .tokenomics-info-table td span{
-	color: #000000 !important;
+	color: #FFFFFF !important;
 }
 
 .tokenomics-container .table{
@@ -316,7 +336,7 @@ background:transparent !important;
 	border:0px solid #71DFE6 !important;
 	background:transparent;
 	font-size:1em;
-        color: #000000 !important;
+        color: #FFFFFF !important;
 max-width:730px;
 }
 
@@ -370,11 +390,11 @@ text-shadow: 2px 2px #73D672;
 /* FOOTER SECTION */
 
 .footer-section{
-background:#FFFFFF;
+background:transparent;
 }
 
 .footer-container{
-color:#000000;
+color:#FFFFFF;
 }
 
 .footer-container ul > li{
@@ -386,7 +406,7 @@ margin-bottom:24px;
 }
 
 .footer-container a{
-color:#000000;
+color:#2d9ee0;
 font-size:1.25em;
 font-weight:500;
 }
@@ -539,6 +559,35 @@ background: #843A7C;
 .telegram-pushable-button .front{
 background: #C758BA;
 }
+    
+    /* LIVE BACKGROUND */
+    
+    .background-video-container {
+    position: fixed;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+    
+    .dark-background-overlay {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+    
+    .background-video {
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+    
 </style>
 <style></style></head>
 <body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
@@ -547,7 +596,7 @@ background: #C758BA;
 <nav class="navbar navbar-expand-lg navbar-dark" id="#home">
 <div class="container aos-init aos-animate" data-aos="fade">
 <a class="navbar-brand d-flex flex-row justify-content-center align-items-center" href="/">
-<img class="img-fluid me-2" src="images/logo-with-text.png" width="40px"><h1 style="font-size:1.25em;font-weight:700;font-family:'PT Sans Narrow',sans-serif;" class="mb-0">ChadCoin</h1></a>
+<img class="img-fluid me-2" src="images/logo-with-text.png" width="40px"><h1 style="font-size:1.25em;font-weight:700;font-family:'PT Sans Narrow',sans-serif;" class="d-none"></h1></a>
 <button id="navToggler" class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 <div class="navbar-collapse collapse" id="navbarTogglerDemo02" style="">
 <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
@@ -563,7 +612,13 @@ background: #C758BA;
 </header>
 
 <main>
-    
+<div id="backgroundvideocontainer" class="background-video-container">
+<video class="background-video" autoplay="" muted="" loop="">
+<source src="/images/live-background.webm" type="video/webm">
+</video>
+</div>
+
+<div id="darkbackgroundoverlay" class="dark-background-overlay"></div>    
 
     
 <section class="hero-section">
@@ -572,7 +627,7 @@ background: #C758BA;
 
 <div class="col-12 col-lg-12 d-flex flex-column justify-content-center align-items-center">
 
-<h1 class="hero-title aos-init aos-animate" data-aos="fade">CHAD!</h1>
+<h1 class="hero-title aos-init aos-animate" data-aos="fade">Kirito</h1>
 <p class="hero-description text-center aos-init aos-animate" data-aos="fade" style="max-width:600px;z-index:2;position:relative;">ChadCoin is a hyper-deflationary, community-driven token on the Binance Smart Chain.</p>
 <div class="d-flex flex-column flex-sm-row mt-2">
 <a type="button" class="buy-button btn btn-primary m-2 " href="https://pancakeswap.finance/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c&amp;outputCurrency=0xa701d2780b3eff268cad602e44bae728509225ec" target="_blank">Buy On Pancakeswap</a>
@@ -656,7 +711,7 @@ background: #C758BA;
                     </div>
 </div>
 <div class="row mb-4">
-<h3 class="text-center mb-4 aos-init" style="font-size:2em;z-index:2;position:relative" data-aos="fade">Buy Tax 12%</h3>
+<h3 class="text-center mb-4 aos-init" style="font-size:2em;z-index:2;position:relative;color:#FFFFFF" data-aos="fade">Buy Tax 12%</h3>
 
 
 
@@ -682,7 +737,7 @@ background: #C758BA;
 </div>
 
 <div class="row mb-4">
-<h3 class="text-center mb-4 aos-init" style="font-size:2em;z-index:2;position:relative" data-aos="fade">Sell Tax 15%</h3>
+<h3 class="text-center mb-4 aos-init" style="font-size:2em;z-index:2;position:relative;color:#FFFFFF" data-aos="fade">Sell Tax 15%</h3>
 
 
 
@@ -717,17 +772,17 @@ background: #C758BA;
 <h2 class="section-title roadmap-title mt-4 aos-init" data-aos="fade" style="color:#FFFFFF">ROADMAP</h2>
 <div class="row mt-4 mb-4">
 <div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
-<h4 style="color:#FFFFFF">PHASE 1</h4>
+<h4 style="color:#2d9ee0">PHASE 1</h4>
 <ul class="list-unstyled text-small text-center mt-3">
-<li>Telegram and Twitter Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Initial Marketing Campaign<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
-<li>Pancakeswap Fair Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Telegram and Twitter Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Initial Marketing Campaign<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
+<li>Pancakeswap Fair Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#2d9ee0" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
 <li>LP Lock Extension<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
 <li>Website V1 Launch<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path fill="#FFFFFF" d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.25 8.891l-1.421-1.409-6.105 6.218-3.078-2.937-1.396 1.436 4.5 4.319 7.5-7.627z"></path></svg></li>
 </ul>
 </div>
 <div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
-<h4 style="color:#FFFFFF">PHASE 2</h4>
+<h4 style="color:#2d9ee0">PHASE 2</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>Community Shilling</li>
 <li>Coin Listing Sites</li>
@@ -737,10 +792,10 @@ background: #C758BA;
 </ul>
 </div>
 <div class="col-12 col-lg-4 text-center py-3 aos-init" data-aos="fade">
-<h4 style="color:#FFFFFF">PHASE 3</h4>
+<h4 style="color:#2d9ee0">PHASE 3</h4>
 <ul class="list-unstyled text-small text-center mt-3">
 <li>Merchandise Launch</li>
-<li>Staking Platform Launch</li>
+<li>P2E Game Launch</li>
 <li>Swap Platform Launch</li>
 <li>Secret Utilities Along With</li>
 <li>Massive Marketing Campaign</li>
